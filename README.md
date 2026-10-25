@@ -108,6 +108,12 @@ This project helps beginners understand:
 - Introduce different game modes.
 - Save high scores.
 - Add a game timer and leaderboard.
+ 
+ - 📜 License
 
-**Built with Python 🐍 and Tkinter 🖥️**
+This project is open source. You can add an MIT License or another suitable license to specify how others may use and modify your code.
+
+
+
+**Built with Python 🐍
 
