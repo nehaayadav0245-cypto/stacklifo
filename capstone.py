@@ -1,11 +1,7 @@
 import tkinter as tk
 import random
 
-# -----------------------------
-# CARD STACK GAME
-# Data Structure: STACK
-# Principle: LIFO
-# -----------------------------
+
 
 # Create the main window
 root = tk.Tk()
@@ -13,9 +9,6 @@ root.title("🃏 Card Stack Game")
 root.geometry("500x650")
 root.resizable(False, False)
 
-# -----------------------------
-# VARIABLES
-# -----------------------------
 
 # Stack
 stack = []
@@ -38,9 +31,7 @@ random.shuffle(cards)
 score = 0
 
 
-# -----------------------------
-# FUNCTIONS
-# -----------------------------
+
 
 def update_display():
     """Update the stack display."""
@@ -163,9 +154,7 @@ def reset_game():
     update_display()
 
 
-# -----------------------------
-# TITLE
-# -----------------------------
+
 
 title_label = tk.Label(
     root,
@@ -176,9 +165,7 @@ title_label = tk.Label(
 title_label.pack(pady=15)
 
 
-# -----------------------------
-# DATA STRUCTURE INFORMATION
-# -----------------------------
+
 
 info_label = tk.Label(
     root,
@@ -189,9 +176,7 @@ info_label = tk.Label(
 info_label.pack(pady=5)
 
 
-# -----------------------------
-# TOP CARD
-# -----------------------------
+
 
 top_label = tk.Label(
     root,
@@ -202,9 +187,7 @@ top_label = tk.Label(
 top_label.pack(pady=15)
 
 
-# -----------------------------
-# STACK DISPLAY
-# -----------------------------
+
 
 stack_list = tk.Listbox(
     root,
@@ -217,9 +200,7 @@ stack_list = tk.Listbox(
 stack_list.pack(pady=10)
 
 
-# -----------------------------
-# STATUS
-# -----------------------------
+
 
 count_label = tk.Label(
     root,
@@ -248,9 +229,7 @@ message_label = tk.Label(
 message_label.pack(pady=10)
 
 
-# -----------------------------
-# BUTTONS
-# -----------------------------
+
 
 button_frame = tk.Frame(root)
 button_frame.pack(pady=10)
@@ -300,9 +279,6 @@ reset_button = tk.Button(
 reset_button.grid(row=1, column=1, padx=5, pady=5)
 
 
-# -----------------------------
-# START GAME
-# -----------------------------
 
 update_display()
 
